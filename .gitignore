@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 #Others
-*.sln
+# *.sln     # solutions
