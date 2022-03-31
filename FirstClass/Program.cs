@@ -4,6 +4,8 @@ namespace FirstClass
 /* https://platzi.com/blog/namespace-en-c-sharp/
  * Namespace abarca de forma global
  * Contiene las clases
+ * El namespace es el entorno de trabajo actual, y siempre se nombra
+ * con el nombre del proyecto utilizando PascalCase
  * 
  * Los namespaces són útiles para hacernos escribir menos código, ya que cuando declaramos el:
  *          using system
@@ -19,7 +21,11 @@ namespace FirstClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("What's your name? Please write your full name ");
+            String fullUserName = Console.ReadLine();
+
+            Console.WriteLine("Hello " +fullUserName + ", Welcome to course");
+
         }
     }
 }
