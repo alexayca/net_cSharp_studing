@@ -104,6 +104,17 @@ namespace FirstClass
             Console.WriteLine(split[1]);
             Console.WriteLine(split[2]);
 
+            /* Dada una fecha como un string, y tomando en cuenta el símbolo “/”, 
+             * se obtienen el día, el mes y el año, de la siguiente forma:
+             */
+
+            string fecha = "27/12/2021";
+            string[] splitDate = fecha.Split(new char[] { '/' });
+
+            Console.WriteLine($"Día: { splitDate[0]}");
+            Console.WriteLine($"Mes: { splitDate[1]}");
+            Console.WriteLine($"Año: { splitDate[2]}");
+
             /* Substring()
                 Devuelve un substring o trozo de string de acuerdo a 
                 las posiciones indicadas en los argumentos.
