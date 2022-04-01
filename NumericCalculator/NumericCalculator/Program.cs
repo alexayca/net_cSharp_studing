@@ -8,7 +8,7 @@ Console.WriteLine("Input the first number ");
 // Casting from String to int
 number1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input the first number ");
+Console.WriteLine("Input the second number ");
 // Conversion explicita
 number2 = Convert.ToInt32(Console.ReadLine());
 
