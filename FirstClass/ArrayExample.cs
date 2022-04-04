@@ -6,7 +6,7 @@ namespace FirstClass
 {
     class ArrayExample
     {
-        static void cafeArray() 
+        internal void cafeArray() 
         {
             /* ejemplo de uso de arrays.
              * Como estructura seria mejor un objeto cafe,

@@ -14,14 +14,14 @@ namespace FirstClass
 {
     class FigureArea
     {
-        static void calculateRectangleArea()
+        public static void calculateRectangleArea()
         {
-            Console.WriteLine("Plase enter the side A of the rectangle, you can use decimals.");
+            Console.WriteLine("Please enter the side A of the rectangle, you can use decimals.");
             float sideA = float.Parse(Console.ReadLine());
             float sideB = 20.6f;
 
             float rectangleArea = sideA * sideB;
-            Console.WriteLine("Tha rectangle area is: " +rectangleArea);
+            Console.WriteLine("The rectangle area is: " +rectangleArea);
 
 
             float number1 = 10.555f;

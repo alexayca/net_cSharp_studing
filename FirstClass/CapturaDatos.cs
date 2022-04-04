@@ -6,7 +6,7 @@ namespace FirstClass
 {
     class CapturaDatos
     {
-        static void muestraPersonales() 
+        internal void muestraPersonales() 
         {
             Console.WriteLine("What's your name? Please write your full name ");
             String fullUserName = Console.ReadLine();

@@ -6,13 +6,13 @@ namespace FirstClass
 {
     class EjemploMethods
     {
-        static void muestraEjemplo()
+        internal static void muestraEjemplo()
         {
             Random rnd = new Random();
             Console.WriteLine($"Random value betwent 1 - 10: ${rnd.Next(1,10)}");
         }
 
-        static void metodosStrings()
+        internal static void metodosStrings()
         {
             // https://platzi.com/clases/2198-introduccion-csharp/36839-metodos-de-strings/
 
@@ -94,6 +94,7 @@ namespace FirstClass
             Console.WriteLine(ClassTopic.Replace("s", "z"));
 
             /* Split()
+             * https://docs.microsoft.com/en-us/dotnet/api/system.string.split?view=net-5.0#System_String_Split_System_Char___
                 Este es un caso especial donde creamos un nuevo string 
                 donde guardamos el string separado en trozos por la letra indicada 
                 en los argumentos del método. Para este caso se separa por la letra “s” 

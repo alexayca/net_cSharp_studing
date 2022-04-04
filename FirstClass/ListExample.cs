@@ -6,7 +6,7 @@ namespace FirstClass
 {
     class ListExample
     {
-        static void Listtacos() 
+        internal void listTacos() 
         {
             // Definimos la lista
             List<string> tacoShoppingList = new List<string>();
