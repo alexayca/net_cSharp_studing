@@ -48,12 +48,23 @@ namespace EstructurasControl
             }
         }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+        static void bucleFor() {
+            // un ciclo for puede tener una o mas variables de control
+            for (int i = 0, j = 0;      i < 10 && j > -10;      i++, j--)
+            {
+                Console.WriteLine($"i: {0}  j: {1}" ,i ,j);
+            }
+        }
         static void Main(string[] args)
         {
             
             //Program.condicionalIF();
-            condicionalSwitch();
+            //condicionalSwitch();
+            bucleFor();
+
         }
     }
 }
