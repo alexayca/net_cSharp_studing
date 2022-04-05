@@ -48,9 +48,8 @@ namespace EstructurasControl
             }
         }
 
-        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
         static void bucleFor() {
             // un ciclo for puede tener una o mas variables de control
             for (int i = 0, j = 0;      i < 10 && j > -10;      i++, j--)
@@ -58,12 +57,39 @@ namespace EstructurasControl
                 Console.WriteLine($"i: {0}  j: {1}" ,i ,j);
             }
         }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+        static void bucleWhile() {
+            bool continueSoftwareExecution = true;
+            while (continueSoftwareExecution) {
+                Console.WriteLine("Do you wish to keep the software running? Write 1 for yes or 0 for No");
+                int keepGoing = Convert.ToInt32(Console.ReadLine());
+                if (keepGoing == 1)
+                {
+                    Console.WriteLine("This software will keep running");
+                }
+                else if(keepGoing ==0){
+                    Console.WriteLine("This is the last time the software is running");
+                    continueSoftwareExecution = false;
+                }
+                else {
+                    Console.WriteLine("You've enter an invalid input, try again.");
+                }
+                
+            }
+        }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
         static void Main(string[] args)
         {
             
             //Program.condicionalIF();
             //condicionalSwitch();
-            bucleFor();
+            //bucleFor();
+            bucleWhile();
 
         }
     }
