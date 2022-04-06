@@ -351,3 +351,6 @@ MigrationBackup/
 
 #Others
 # *.sln     # solutions
+# Azure personal test project
+WebApp
+WebAppMVC
