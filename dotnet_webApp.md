@@ -16,4 +16,16 @@ cd Nombre_Proyecto_WebApp
 dotnet run
 ```
 
+Para integrar el proyecto a se solia utilizar el archivo xml "Obtener perfil de publicacion" con extension *AppWebAzure*.PublishSettings en el sitio web de AppService.
+En el archivo tenemos:
+ - Direccion FTP publishUrl
+ - nombre de usuario userName
+ - password userPWD
 
+Para facilitar la tarea se utiliza la integracion continua, en lugar de subir los archivos por FTP.
+Para llevarla a cabo en Azure utilizo Deployment Center dentro del recurso AppService.
+ - Configuracion, Origen. Seleccionamos el sistema de control de versiones.
+ - Registros, 
+ - Credenciales FTPS, 
+ Configuración del flujo de trabajo
+ 
